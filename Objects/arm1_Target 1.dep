@@ -1,0 +1,3 @@
+Dependencies for Project 'arm1', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6210000::V6.21::ARMCLANG
+F (.\Prog1.s)(0x6648953B)(--target=arm-arm-none-eabi -mcpu=cortex-m3 -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-mlittle-endian -gdwarf-4 -Wa,armasm,--pd,"__EVAL SETA 1"-IC:/Users/HASIB/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM3/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 539" -Wa,armasm,--pd,"ARMCM3 SETA 1"-o ./objects/prog1.o)

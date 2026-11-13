@@ -1,0 +1,63 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000024274489e40 .scope module, "comparator_tb" "comparator_tb" 2 2;
+ .timescale -9 -12;
+v00000242744a3300_0 .var "a", 0 0;
+v00000242744a33a0_0 .var "b", 0 0;
+v00000242744a3440_0 .net "c", 0 0, L_00000242744a3980;  1 drivers
+S_0000024274489fd0 .scope module, "uut" "comparator" 2 7, 3 1 0, S_0000024274489e40;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "x";
+    .port_info 1 /INPUT 1 "y";
+    .port_info 2 /OUTPUT 1 "z";
+L_0000024274488d40 .functor AND 1, v00000242744a3300_0, v00000242744a33a0_0, C4<1>, C4<1>;
+L_00000242744d58c0 .functor AND 1, L_00000242744a34e0, L_00000242744a3580, C4<1>, C4<1>;
+L_00000242744a3980 .functor OR 1, L_0000024274488d40, L_00000242744d58c0, C4<0>, C4<0>;
+v00000242744a3ba0_0 .net *"_ivl_1", 0 0, L_0000024274488d40;  1 drivers
+v00000242744d4920_0 .net *"_ivl_3", 0 0, L_00000242744a34e0;  1 drivers
+v0000024274488ca0_0 .net *"_ivl_5", 0 0, L_00000242744a3580;  1 drivers
+v000002427448bd00_0 .net *"_ivl_7", 0 0, L_00000242744d58c0;  1 drivers
+v000002427448bda0_0 .net "x", 0 0, v00000242744a3300_0;  1 drivers
+v000002427448be40_0 .net "y", 0 0, v00000242744a33a0_0;  1 drivers
+v000002427448bee0_0 .net "z", 0 0, L_00000242744a3980;  alias, 1 drivers
+L_00000242744a34e0 .reduce/nor v00000242744a3300_0;
+L_00000242744a3580 .reduce/nor v00000242744a33a0_0;
+    .scope S_0000024274489e40;
+T_0 ;
+    %vpi_call 2 12 "$dumpfile", "comparatorout.vcd" {0 0 0};
+    %vpi_call 2 13 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000024274489e40 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000242744a3300_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000242744a33a0_0, 0, 1;
+    %delay 20000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000242744a3300_0, 0, 1;
+    %delay 20000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000242744a33a0_0, 0, 1;
+    %delay 20000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000242744a3300_0, 0, 1;
+    %delay 20000, 0;
+    %vpi_call 2 23 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0000024274489e40;
+T_1 ;
+    %vpi_call 2 27 "$monitor", "x = %d, y = %d || z = %d \012", v00000242744a3300_0, v00000242744a33a0_0, v00000242744a3440_0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "comparator_tb.v";
+    "comparator.v";

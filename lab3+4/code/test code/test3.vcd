@@ -1,0 +1,571 @@
+$date
+	Sat Sep 21 00:57:27 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module RFSet_tb $end
+$var wire 5 ! B [4:0] $end
+$var wire 5 " A [4:0] $end
+$var reg 3 # RA [2:0] $end
+$var reg 3 $ RB [2:0] $end
+$var reg 1 % RE $end
+$var reg 3 & WR [2:0] $end
+$var reg 5 ' WRD [4:0] $end
+$var reg 1 ( clk $end
+$var reg 1 ) reset $end
+$scope module uut $end
+$var wire 3 * RA [2:0] $end
+$var wire 3 + RB [2:0] $end
+$var wire 1 % RE $end
+$var wire 3 , WR [2:0] $end
+$var wire 5 - WRD [4:0] $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var wire 5 . R11 [4:0] $end
+$var wire 5 / R100 [4:0] $end
+$var wire 5 0 R10 [4:0] $end
+$var wire 5 1 R01 [4:0] $end
+$var wire 5 2 R00 [4:0] $end
+$var reg 5 3 A [4:0] $end
+$var reg 5 4 B [4:0] $end
+$var reg 5 5 WR_SEL [4:0] $end
+$scope module Reg00 $end
+$var wire 5 6 Din [4:0] $end
+$var wire 1 7 Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var wire 5 8 Dout [4:0] $end
+$scope module cir1stbit $end
+$var wire 1 9 Din $end
+$var wire 1 : Dout $end
+$var wire 1 7 Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var reg 1 : DFF $end
+$upscope $end
+$scope module cir2ndbit $end
+$var wire 1 ; Din $end
+$var wire 1 < Dout $end
+$var wire 1 7 Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var reg 1 < DFF $end
+$upscope $end
+$scope module cir3rdbit $end
+$var wire 1 = Din $end
+$var wire 1 > Dout $end
+$var wire 1 7 Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var reg 1 > DFF $end
+$upscope $end
+$scope module cir4thbit $end
+$var wire 1 ? Din $end
+$var wire 1 @ Dout $end
+$var wire 1 7 Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var reg 1 @ DFF $end
+$upscope $end
+$scope module cir5thbit $end
+$var wire 1 A Din $end
+$var wire 1 B Dout $end
+$var wire 1 7 Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var reg 1 B DFF $end
+$upscope $end
+$upscope $end
+$scope module Reg01 $end
+$var wire 5 C Din [4:0] $end
+$var wire 1 D Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var wire 5 E Dout [4:0] $end
+$scope module cir1stbit $end
+$var wire 1 F Din $end
+$var wire 1 G Dout $end
+$var wire 1 D Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var reg 1 G DFF $end
+$upscope $end
+$scope module cir2ndbit $end
+$var wire 1 H Din $end
+$var wire 1 I Dout $end
+$var wire 1 D Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var reg 1 I DFF $end
+$upscope $end
+$scope module cir3rdbit $end
+$var wire 1 J Din $end
+$var wire 1 K Dout $end
+$var wire 1 D Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var reg 1 K DFF $end
+$upscope $end
+$scope module cir4thbit $end
+$var wire 1 L Din $end
+$var wire 1 M Dout $end
+$var wire 1 D Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var reg 1 M DFF $end
+$upscope $end
+$scope module cir5thbit $end
+$var wire 1 N Din $end
+$var wire 1 O Dout $end
+$var wire 1 D Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var reg 1 O DFF $end
+$upscope $end
+$upscope $end
+$scope module Reg10 $end
+$var wire 5 P Din [4:0] $end
+$var wire 1 Q Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var wire 5 R Dout [4:0] $end
+$scope module cir1stbit $end
+$var wire 1 S Din $end
+$var wire 1 T Dout $end
+$var wire 1 Q Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var reg 1 T DFF $end
+$upscope $end
+$scope module cir2ndbit $end
+$var wire 1 U Din $end
+$var wire 1 V Dout $end
+$var wire 1 Q Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var reg 1 V DFF $end
+$upscope $end
+$scope module cir3rdbit $end
+$var wire 1 W Din $end
+$var wire 1 X Dout $end
+$var wire 1 Q Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var reg 1 X DFF $end
+$upscope $end
+$scope module cir4thbit $end
+$var wire 1 Y Din $end
+$var wire 1 Z Dout $end
+$var wire 1 Q Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var reg 1 Z DFF $end
+$upscope $end
+$scope module cir5thbit $end
+$var wire 1 [ Din $end
+$var wire 1 \ Dout $end
+$var wire 1 Q Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var reg 1 \ DFF $end
+$upscope $end
+$upscope $end
+$scope module Reg100 $end
+$var wire 5 ] Din [4:0] $end
+$var wire 1 ^ Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var wire 5 _ Dout [4:0] $end
+$scope module cir1stbit $end
+$var wire 1 ` Din $end
+$var wire 1 a Dout $end
+$var wire 1 ^ Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var reg 1 a DFF $end
+$upscope $end
+$scope module cir2ndbit $end
+$var wire 1 b Din $end
+$var wire 1 c Dout $end
+$var wire 1 ^ Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var reg 1 c DFF $end
+$upscope $end
+$scope module cir3rdbit $end
+$var wire 1 d Din $end
+$var wire 1 e Dout $end
+$var wire 1 ^ Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var reg 1 e DFF $end
+$upscope $end
+$scope module cir4thbit $end
+$var wire 1 f Din $end
+$var wire 1 g Dout $end
+$var wire 1 ^ Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var reg 1 g DFF $end
+$upscope $end
+$scope module cir5thbit $end
+$var wire 1 h Din $end
+$var wire 1 i Dout $end
+$var wire 1 ^ Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var reg 1 i DFF $end
+$upscope $end
+$upscope $end
+$scope module Reg11 $end
+$var wire 5 j Din [4:0] $end
+$var wire 1 k Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var wire 5 l Dout [4:0] $end
+$scope module cir1stbit $end
+$var wire 1 m Din $end
+$var wire 1 n Dout $end
+$var wire 1 k Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var reg 1 n DFF $end
+$upscope $end
+$scope module cir2ndbit $end
+$var wire 1 o Din $end
+$var wire 1 p Dout $end
+$var wire 1 k Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var reg 1 p DFF $end
+$upscope $end
+$scope module cir3rdbit $end
+$var wire 1 q Din $end
+$var wire 1 r Dout $end
+$var wire 1 k Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var reg 1 r DFF $end
+$upscope $end
+$scope module cir4thbit $end
+$var wire 1 s Din $end
+$var wire 1 t Dout $end
+$var wire 1 k Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var reg 1 t DFF $end
+$upscope $end
+$scope module cir5thbit $end
+$var wire 1 u Din $end
+$var wire 1 v Dout $end
+$var wire 1 k Sel $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var reg 1 v DFF $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0v
+0u
+0t
+0s
+0r
+0q
+0p
+0o
+0n
+0m
+b0 l
+0k
+b0 j
+0i
+0h
+0g
+0f
+0e
+0d
+0c
+0b
+0a
+0`
+b0 _
+0^
+b0 ]
+0\
+0[
+0Z
+0Y
+0X
+0W
+0V
+0U
+0T
+0S
+b0 R
+0Q
+b0 P
+0O
+0N
+0M
+0L
+0K
+0J
+0I
+0H
+0G
+0F
+b0 E
+0D
+b0 C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+b0 8
+07
+b0 6
+b0 5
+b0 4
+b0 3
+b0 2
+b0 1
+b0 0
+b0 /
+b0 .
+b0 -
+b0 ,
+b0 +
+b0 *
+1)
+0(
+b0 '
+b0 &
+0%
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#5
+1(
+#10
+0(
+0)
+#15
+1(
+#20
+17
+19
+1=
+1?
+1A
+1F
+1J
+1L
+1N
+1S
+1W
+1Y
+1[
+1`
+1d
+1f
+1h
+1m
+1q
+1s
+1u
+b1 5
+0(
+b11101 '
+b11101 -
+b11101 6
+b11101 C
+b11101 P
+b11101 ]
+b11101 j
+1%
+#25
+b11101 "
+b11101 3
+b11101 !
+b11101 4
+1B
+1@
+1>
+b11101 2
+b11101 8
+1:
+1(
+#30
+07
+1D
+b0 "
+b0 3
+0?
+0L
+0Y
+0f
+0s
+b10 5
+0(
+b1 #
+b1 *
+b10101 '
+b10101 -
+b10101 6
+b10101 C
+b10101 P
+b10101 ]
+b10101 j
+b1 &
+b1 ,
+#35
+b10101 "
+b10101 3
+1G
+1K
+b10101 1
+b10101 E
+1O
+1(
+#40
+0D
+1Q
+b10101 !
+b10101 4
+b0 "
+b0 3
+1;
+0=
+1?
+1H
+0J
+1L
+1U
+0W
+1Y
+1b
+0d
+1f
+1o
+0q
+1s
+b100 5
+0(
+b1 $
+b1 +
+b10 #
+b10 *
+b11011 '
+b11011 -
+b11011 6
+b11011 C
+b11011 P
+b11011 ]
+b11011 j
+b10 &
+b10 ,
+#45
+b11011 "
+b11011 3
+1\
+1Z
+1V
+b11011 0
+b11011 R
+1T
+1(
+#50
+0Q
+1^
+b0 !
+b0 4
+0;
+0?
+0H
+0L
+0U
+0Y
+0b
+0f
+0o
+0s
+b10000 5
+0(
+b100 $
+b100 +
+b10001 '
+b10001 -
+b10001 6
+b10001 C
+b10001 P
+b10001 ]
+b10001 j
+b100 &
+b100 ,
+#55
+b10001 !
+b10001 4
+1a
+b10001 /
+b10001 _
+1i
+1(
+#60
+0^
+b11101 !
+b11101 4
+b0 "
+b0 3
+1=
+1?
+1J
+1L
+1W
+1Y
+1d
+1f
+1q
+1s
+b0 5
+0(
+b0 $
+b0 +
+b11 #
+b11 *
+b11101 '
+b11101 -
+b11101 6
+b11101 C
+b11101 P
+b11101 ]
+b11101 j
+b11 &
+b11 ,
+0%
+#65
+1(
+#70
+0(
+#75
+1(
+#80
+0(

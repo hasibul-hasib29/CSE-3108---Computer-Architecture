@@ -1,0 +1,2704 @@
+$date
+	Tue Oct 08 12:37:24 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module CPU_tb $end
+$var wire 5 ! REG3 [4:0] $end
+$var wire 5 " REG2 [4:0] $end
+$var wire 5 # REG1 [4:0] $end
+$var wire 5 $ REG0 [4:0] $end
+$var wire 11 % RAM7 [10:0] $end
+$var wire 11 & RAM6 [10:0] $end
+$var wire 11 ' RAM5 [10:0] $end
+$var wire 11 ( RAM4 [10:0] $end
+$var wire 11 ) RAM3 [10:0] $end
+$var wire 11 * RAM2 [10:0] $end
+$var wire 11 + RAM1 [10:0] $end
+$var wire 11 , RAM0 [10:0] $end
+$var wire 11 - PI [10:0] $end
+$var wire 3 . PC [2:0] $end
+$var wire 5 / OutD [4:0] $end
+$var reg 5 0 InD [4:0] $end
+$var reg 1 1 InE $end
+$var reg 1 2 PC_Enable $end
+$var reg 3 3 RAM_Write_Address [2:0] $end
+$var reg 11 4 RAM_Write_Data [10:0] $end
+$var reg 1 5 RAM_Write_Enable $end
+$var reg 1 6 clk $end
+$var reg 1 7 reset $end
+$scope module uut $end
+$var wire 1 8 CPU_CLK $end
+$var wire 5 9 InD [4:0] $end
+$var wire 1 1 InE $end
+$var wire 3 : PC [2:0] $end
+$var wire 1 2 PC_Enable $end
+$var wire 11 ; PI [10:0] $end
+$var wire 5 < R [4:0] $end
+$var wire 3 = RAM_Write_Address [2:0] $end
+$var wire 11 > RAM_Write_Data [10:0] $end
+$var wire 1 5 RAM_Write_Enable $end
+$var wire 3 ? Write_Address [2:0] $end
+$var wire 11 @ Write_Data [10:0] $end
+$var wire 1 A Write_Enable $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 B dZF $end
+$var wire 1 C dSF $end
+$var wire 1 D dCF $end
+$var wire 1 E ZF $end
+$var wire 2 F WR [1:0] $end
+$var wire 1 G SF $end
+$var wire 1 H REG_EN $end
+$var wire 5 I REG3 [4:0] $end
+$var wire 5 J REG2 [4:0] $end
+$var wire 5 K REG1 [4:0] $end
+$var wire 5 L REG0 [4:0] $end
+$var wire 2 M RB [1:0] $end
+$var wire 11 N RAM7 [10:0] $end
+$var wire 11 O RAM6 [10:0] $end
+$var wire 11 P RAM5 [10:0] $end
+$var wire 11 Q RAM4 [10:0] $end
+$var wire 11 R RAM3 [10:0] $end
+$var wire 11 S RAM2 [10:0] $end
+$var wire 11 T RAM1 [10:0] $end
+$var wire 11 U RAM0 [10:0] $end
+$var wire 2 V RA [1:0] $end
+$var wire 11 W Program_Instruction2 [10:0] $end
+$var wire 11 X Program_Instruction [10:0] $end
+$var wire 3 Y Program_Address [2:0] $end
+$var wire 5 Z OutD [4:0] $end
+$var wire 4 [ Opcode [3:0] $end
+$var wire 2 \ OP [1:0] $end
+$var wire 3 ] Next_Program_Address [2:0] $end
+$var wire 1 ^ LD_SEL $end
+$var wire 5 _ LD_DATA [4:0] $end
+$var wire 3 ` LD_ADDR [2:0] $end
+$var wire 1 a JMP_SEL $end
+$var wire 3 b JMP_ADDR [2:0] $end
+$var wire 1 c IMM_SEL $end
+$var wire 5 d IMM_DATA [4:0] $end
+$var wire 1 e CF $end
+$var wire 5 f B_Final [4:0] $end
+$var wire 5 g B [4:0] $end
+$var wire 5 h A [4:0] $end
+$scope module ALU_circuit1 $end
+$var wire 5 i B [4:0] $end
+$var wire 1 E ZF $end
+$var wire 1 G SF $end
+$var wire 5 j R_SHL [4:0] $end
+$var wire 5 k R_ADD_SUB [4:0] $end
+$var wire 2 l OP [1:0] $end
+$var wire 1 m CF_ADD_SUB $end
+$var wire 1 e CF $end
+$var wire 5 n A [4:0] $end
+$var reg 5 o R [4:0] $end
+$var reg 1 p Sel $end
+$scope module ADD_SUB1 $end
+$var wire 5 q B [4:0] $end
+$var wire 1 p Sel $end
+$var wire 5 r R [4:0] $end
+$var wire 1 m CF $end
+$var wire 5 s B_selected [4:0] $end
+$var wire 5 t B_complement [4:0] $end
+$var wire 5 u A [4:0] $end
+$upscope $end
+$scope module SHL1 $end
+$var wire 5 v B [4:0] $end
+$var wire 2 w B2bit [1:0] $end
+$var wire 5 x A [4:0] $end
+$var reg 5 y R [4:0] $end
+$upscope $end
+$upscope $end
+$scope module CU_circuit1 $end
+$var wire 4 z Opcode [3:0] $end
+$var wire 1 B ZF $end
+$var wire 1 C SF $end
+$var wire 1 H REG_EN $end
+$var wire 2 { OP [1:0] $end
+$var wire 1 ^ LD_SEL $end
+$var wire 1 a JMP_SEL $end
+$var wire 1 c IMM_SEL $end
+$var wire 1 D CF $end
+$upscope $end
+$scope module FLAG_circuit1 $end
+$var wire 1 e CF $end
+$var wire 1 G SF $end
+$var wire 1 E ZF $end
+$var wire 1 8 clk $end
+$var wire 1 D dCF $end
+$var wire 1 C dSF $end
+$var wire 1 B dZF $end
+$var wire 1 7 reset $end
+$var reg 1 | CF_DFF $end
+$var reg 1 C SF_DFF $end
+$var reg 1 B ZF_DFF $end
+$upscope $end
+$scope module PC_circuit1 $end
+$var wire 3 } I [2:0] $end
+$var wire 3 ~ O [2:0] $end
+$var wire 1 8 clk $end
+$var wire 1 7 reset $end
+$var reg 3 !" DFF [2:0] $end
+$upscope $end
+$scope module RAM_circuit1 $end
+$var wire 11 "" RAMrow0 [10:0] $end
+$var wire 11 #" RAMrow1 [10:0] $end
+$var wire 11 $" RAMrow2 [10:0] $end
+$var wire 11 %" RAMrow3 [10:0] $end
+$var wire 11 &" RAMrow4 [10:0] $end
+$var wire 11 '" RAMrow5 [10:0] $end
+$var wire 11 (" RAMrow6 [10:0] $end
+$var wire 11 )" RAMrow7 [10:0] $end
+$var wire 3 *" Read_Address_1 [2:0] $end
+$var wire 3 +" Read_Address_2 [2:0] $end
+$var wire 11 ," Read_Data_1 [10:0] $end
+$var wire 11 -" Read_Data_2 [10:0] $end
+$var wire 3 ." Write_Address [2:0] $end
+$var wire 11 /" Write_Data [10:0] $end
+$var wire 1 A Write_Enable $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 11 0" RD2_row7 [10:0] $end
+$var wire 11 1" RD2_row6 [10:0] $end
+$var wire 11 2" RD2_row5 [10:0] $end
+$var wire 11 3" RD2_row4 [10:0] $end
+$var wire 11 4" RD2_row3 [10:0] $end
+$var wire 11 5" RD2_row2 [10:0] $end
+$var wire 11 6" RD2_row1 [10:0] $end
+$var wire 11 7" RD2_row0 [10:0] $end
+$var wire 11 8" RD1_row7 [10:0] $end
+$var wire 11 9" RD1_row6 [10:0] $end
+$var wire 11 :" RD1_row5 [10:0] $end
+$var wire 11 ;" RD1_row4 [10:0] $end
+$var wire 11 <" RD1_row3 [10:0] $end
+$var wire 11 =" RD1_row2 [10:0] $end
+$var wire 11 >" RD1_row1 [10:0] $end
+$var wire 11 ?" RD1_row0 [10:0] $end
+$var wire 11 @" RAM_row7 [10:0] $end
+$var wire 11 A" RAM_row6 [10:0] $end
+$var wire 11 B" RAM_row5 [10:0] $end
+$var wire 11 C" RAM_row4 [10:0] $end
+$var wire 11 D" RAM_row3 [10:0] $end
+$var wire 11 E" RAM_row2 [10:0] $end
+$var wire 11 F" RAM_row1 [10:0] $end
+$var wire 11 G" RAM_row0 [10:0] $end
+$var reg 8 H" RD1_SEL [7:0] $end
+$var reg 8 I" RD2_SEL [7:0] $end
+$var reg 8 J" WR_SEL [7:0] $end
+$scope module ram_row0 $end
+$var wire 1 K" Read_Select_1 $end
+$var wire 1 L" Read_Select_2 $end
+$var wire 11 M" Write_Data [10:0] $end
+$var wire 1 N" Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 11 O" Read_Data_2 [10:0] $end
+$var wire 11 P" Read_Data_1 [10:0] $end
+$var wire 11 Q" RAM_row_data [10:0] $end
+$scope module cir0thbit $end
+$var wire 1 R" RAM1bit_data $end
+$var wire 1 K" Read_Select_1 $end
+$var wire 1 L" Read_Select_2 $end
+$var wire 1 S" Write_Data $end
+$var wire 1 N" Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 T" Read_Data_2 $end
+$var wire 1 U" Read_Data_1 $end
+$var reg 1 V" DFF $end
+$upscope $end
+$scope module cir10thbit $end
+$var wire 1 W" RAM1bit_data $end
+$var wire 1 K" Read_Select_1 $end
+$var wire 1 L" Read_Select_2 $end
+$var wire 1 X" Write_Data $end
+$var wire 1 N" Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 Y" Read_Data_2 $end
+$var wire 1 Z" Read_Data_1 $end
+$var reg 1 [" DFF $end
+$upscope $end
+$scope module cir1stbit $end
+$var wire 1 \" RAM1bit_data $end
+$var wire 1 K" Read_Select_1 $end
+$var wire 1 L" Read_Select_2 $end
+$var wire 1 ]" Write_Data $end
+$var wire 1 N" Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 ^" Read_Data_2 $end
+$var wire 1 _" Read_Data_1 $end
+$var reg 1 `" DFF $end
+$upscope $end
+$scope module cir2ndbit $end
+$var wire 1 a" RAM1bit_data $end
+$var wire 1 K" Read_Select_1 $end
+$var wire 1 L" Read_Select_2 $end
+$var wire 1 b" Write_Data $end
+$var wire 1 N" Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 c" Read_Data_2 $end
+$var wire 1 d" Read_Data_1 $end
+$var reg 1 e" DFF $end
+$upscope $end
+$scope module cir3rdbit $end
+$var wire 1 f" RAM1bit_data $end
+$var wire 1 K" Read_Select_1 $end
+$var wire 1 L" Read_Select_2 $end
+$var wire 1 g" Write_Data $end
+$var wire 1 N" Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 h" Read_Data_2 $end
+$var wire 1 i" Read_Data_1 $end
+$var reg 1 j" DFF $end
+$upscope $end
+$scope module cir4thbit $end
+$var wire 1 k" RAM1bit_data $end
+$var wire 1 K" Read_Select_1 $end
+$var wire 1 L" Read_Select_2 $end
+$var wire 1 l" Write_Data $end
+$var wire 1 N" Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 m" Read_Data_2 $end
+$var wire 1 n" Read_Data_1 $end
+$var reg 1 o" DFF $end
+$upscope $end
+$scope module cir5thbit $end
+$var wire 1 p" RAM1bit_data $end
+$var wire 1 K" Read_Select_1 $end
+$var wire 1 L" Read_Select_2 $end
+$var wire 1 q" Write_Data $end
+$var wire 1 N" Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 r" Read_Data_2 $end
+$var wire 1 s" Read_Data_1 $end
+$var reg 1 t" DFF $end
+$upscope $end
+$scope module cir6thbit $end
+$var wire 1 u" RAM1bit_data $end
+$var wire 1 K" Read_Select_1 $end
+$var wire 1 L" Read_Select_2 $end
+$var wire 1 v" Write_Data $end
+$var wire 1 N" Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 w" Read_Data_2 $end
+$var wire 1 x" Read_Data_1 $end
+$var reg 1 y" DFF $end
+$upscope $end
+$scope module cir7thbit $end
+$var wire 1 z" RAM1bit_data $end
+$var wire 1 K" Read_Select_1 $end
+$var wire 1 L" Read_Select_2 $end
+$var wire 1 {" Write_Data $end
+$var wire 1 N" Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 |" Read_Data_2 $end
+$var wire 1 }" Read_Data_1 $end
+$var reg 1 ~" DFF $end
+$upscope $end
+$scope module cir8thbit $end
+$var wire 1 !# RAM1bit_data $end
+$var wire 1 K" Read_Select_1 $end
+$var wire 1 L" Read_Select_2 $end
+$var wire 1 "# Write_Data $end
+$var wire 1 N" Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 ## Read_Data_2 $end
+$var wire 1 $# Read_Data_1 $end
+$var reg 1 %# DFF $end
+$upscope $end
+$scope module cir9thbit $end
+$var wire 1 &# RAM1bit_data $end
+$var wire 1 K" Read_Select_1 $end
+$var wire 1 L" Read_Select_2 $end
+$var wire 1 '# Write_Data $end
+$var wire 1 N" Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 (# Read_Data_2 $end
+$var wire 1 )# Read_Data_1 $end
+$var reg 1 *# DFF $end
+$upscope $end
+$upscope $end
+$scope module ram_row1 $end
+$var wire 1 +# Read_Select_1 $end
+$var wire 1 ,# Read_Select_2 $end
+$var wire 11 -# Write_Data [10:0] $end
+$var wire 1 .# Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 11 /# Read_Data_2 [10:0] $end
+$var wire 11 0# Read_Data_1 [10:0] $end
+$var wire 11 1# RAM_row_data [10:0] $end
+$scope module cir0thbit $end
+$var wire 1 2# RAM1bit_data $end
+$var wire 1 +# Read_Select_1 $end
+$var wire 1 ,# Read_Select_2 $end
+$var wire 1 3# Write_Data $end
+$var wire 1 .# Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 4# Read_Data_2 $end
+$var wire 1 5# Read_Data_1 $end
+$var reg 1 6# DFF $end
+$upscope $end
+$scope module cir10thbit $end
+$var wire 1 7# RAM1bit_data $end
+$var wire 1 +# Read_Select_1 $end
+$var wire 1 ,# Read_Select_2 $end
+$var wire 1 8# Write_Data $end
+$var wire 1 .# Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 9# Read_Data_2 $end
+$var wire 1 :# Read_Data_1 $end
+$var reg 1 ;# DFF $end
+$upscope $end
+$scope module cir1stbit $end
+$var wire 1 <# RAM1bit_data $end
+$var wire 1 +# Read_Select_1 $end
+$var wire 1 ,# Read_Select_2 $end
+$var wire 1 =# Write_Data $end
+$var wire 1 .# Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 ># Read_Data_2 $end
+$var wire 1 ?# Read_Data_1 $end
+$var reg 1 @# DFF $end
+$upscope $end
+$scope module cir2ndbit $end
+$var wire 1 A# RAM1bit_data $end
+$var wire 1 +# Read_Select_1 $end
+$var wire 1 ,# Read_Select_2 $end
+$var wire 1 B# Write_Data $end
+$var wire 1 .# Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 C# Read_Data_2 $end
+$var wire 1 D# Read_Data_1 $end
+$var reg 1 E# DFF $end
+$upscope $end
+$scope module cir3rdbit $end
+$var wire 1 F# RAM1bit_data $end
+$var wire 1 +# Read_Select_1 $end
+$var wire 1 ,# Read_Select_2 $end
+$var wire 1 G# Write_Data $end
+$var wire 1 .# Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 H# Read_Data_2 $end
+$var wire 1 I# Read_Data_1 $end
+$var reg 1 J# DFF $end
+$upscope $end
+$scope module cir4thbit $end
+$var wire 1 K# RAM1bit_data $end
+$var wire 1 +# Read_Select_1 $end
+$var wire 1 ,# Read_Select_2 $end
+$var wire 1 L# Write_Data $end
+$var wire 1 .# Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 M# Read_Data_2 $end
+$var wire 1 N# Read_Data_1 $end
+$var reg 1 O# DFF $end
+$upscope $end
+$scope module cir5thbit $end
+$var wire 1 P# RAM1bit_data $end
+$var wire 1 +# Read_Select_1 $end
+$var wire 1 ,# Read_Select_2 $end
+$var wire 1 Q# Write_Data $end
+$var wire 1 .# Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 R# Read_Data_2 $end
+$var wire 1 S# Read_Data_1 $end
+$var reg 1 T# DFF $end
+$upscope $end
+$scope module cir6thbit $end
+$var wire 1 U# RAM1bit_data $end
+$var wire 1 +# Read_Select_1 $end
+$var wire 1 ,# Read_Select_2 $end
+$var wire 1 V# Write_Data $end
+$var wire 1 .# Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 W# Read_Data_2 $end
+$var wire 1 X# Read_Data_1 $end
+$var reg 1 Y# DFF $end
+$upscope $end
+$scope module cir7thbit $end
+$var wire 1 Z# RAM1bit_data $end
+$var wire 1 +# Read_Select_1 $end
+$var wire 1 ,# Read_Select_2 $end
+$var wire 1 [# Write_Data $end
+$var wire 1 .# Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 \# Read_Data_2 $end
+$var wire 1 ]# Read_Data_1 $end
+$var reg 1 ^# DFF $end
+$upscope $end
+$scope module cir8thbit $end
+$var wire 1 _# RAM1bit_data $end
+$var wire 1 +# Read_Select_1 $end
+$var wire 1 ,# Read_Select_2 $end
+$var wire 1 `# Write_Data $end
+$var wire 1 .# Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 a# Read_Data_2 $end
+$var wire 1 b# Read_Data_1 $end
+$var reg 1 c# DFF $end
+$upscope $end
+$scope module cir9thbit $end
+$var wire 1 d# RAM1bit_data $end
+$var wire 1 +# Read_Select_1 $end
+$var wire 1 ,# Read_Select_2 $end
+$var wire 1 e# Write_Data $end
+$var wire 1 .# Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 f# Read_Data_2 $end
+$var wire 1 g# Read_Data_1 $end
+$var reg 1 h# DFF $end
+$upscope $end
+$upscope $end
+$scope module ram_row2 $end
+$var wire 1 i# Read_Select_1 $end
+$var wire 1 j# Read_Select_2 $end
+$var wire 11 k# Write_Data [10:0] $end
+$var wire 1 l# Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 11 m# Read_Data_2 [10:0] $end
+$var wire 11 n# Read_Data_1 [10:0] $end
+$var wire 11 o# RAM_row_data [10:0] $end
+$scope module cir0thbit $end
+$var wire 1 p# RAM1bit_data $end
+$var wire 1 i# Read_Select_1 $end
+$var wire 1 j# Read_Select_2 $end
+$var wire 1 q# Write_Data $end
+$var wire 1 l# Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 r# Read_Data_2 $end
+$var wire 1 s# Read_Data_1 $end
+$var reg 1 t# DFF $end
+$upscope $end
+$scope module cir10thbit $end
+$var wire 1 u# RAM1bit_data $end
+$var wire 1 i# Read_Select_1 $end
+$var wire 1 j# Read_Select_2 $end
+$var wire 1 v# Write_Data $end
+$var wire 1 l# Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 w# Read_Data_2 $end
+$var wire 1 x# Read_Data_1 $end
+$var reg 1 y# DFF $end
+$upscope $end
+$scope module cir1stbit $end
+$var wire 1 z# RAM1bit_data $end
+$var wire 1 i# Read_Select_1 $end
+$var wire 1 j# Read_Select_2 $end
+$var wire 1 {# Write_Data $end
+$var wire 1 l# Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 |# Read_Data_2 $end
+$var wire 1 }# Read_Data_1 $end
+$var reg 1 ~# DFF $end
+$upscope $end
+$scope module cir2ndbit $end
+$var wire 1 !$ RAM1bit_data $end
+$var wire 1 i# Read_Select_1 $end
+$var wire 1 j# Read_Select_2 $end
+$var wire 1 "$ Write_Data $end
+$var wire 1 l# Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 #$ Read_Data_2 $end
+$var wire 1 $$ Read_Data_1 $end
+$var reg 1 %$ DFF $end
+$upscope $end
+$scope module cir3rdbit $end
+$var wire 1 &$ RAM1bit_data $end
+$var wire 1 i# Read_Select_1 $end
+$var wire 1 j# Read_Select_2 $end
+$var wire 1 '$ Write_Data $end
+$var wire 1 l# Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 ($ Read_Data_2 $end
+$var wire 1 )$ Read_Data_1 $end
+$var reg 1 *$ DFF $end
+$upscope $end
+$scope module cir4thbit $end
+$var wire 1 +$ RAM1bit_data $end
+$var wire 1 i# Read_Select_1 $end
+$var wire 1 j# Read_Select_2 $end
+$var wire 1 ,$ Write_Data $end
+$var wire 1 l# Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 -$ Read_Data_2 $end
+$var wire 1 .$ Read_Data_1 $end
+$var reg 1 /$ DFF $end
+$upscope $end
+$scope module cir5thbit $end
+$var wire 1 0$ RAM1bit_data $end
+$var wire 1 i# Read_Select_1 $end
+$var wire 1 j# Read_Select_2 $end
+$var wire 1 1$ Write_Data $end
+$var wire 1 l# Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 2$ Read_Data_2 $end
+$var wire 1 3$ Read_Data_1 $end
+$var reg 1 4$ DFF $end
+$upscope $end
+$scope module cir6thbit $end
+$var wire 1 5$ RAM1bit_data $end
+$var wire 1 i# Read_Select_1 $end
+$var wire 1 j# Read_Select_2 $end
+$var wire 1 6$ Write_Data $end
+$var wire 1 l# Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 7$ Read_Data_2 $end
+$var wire 1 8$ Read_Data_1 $end
+$var reg 1 9$ DFF $end
+$upscope $end
+$scope module cir7thbit $end
+$var wire 1 :$ RAM1bit_data $end
+$var wire 1 i# Read_Select_1 $end
+$var wire 1 j# Read_Select_2 $end
+$var wire 1 ;$ Write_Data $end
+$var wire 1 l# Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 <$ Read_Data_2 $end
+$var wire 1 =$ Read_Data_1 $end
+$var reg 1 >$ DFF $end
+$upscope $end
+$scope module cir8thbit $end
+$var wire 1 ?$ RAM1bit_data $end
+$var wire 1 i# Read_Select_1 $end
+$var wire 1 j# Read_Select_2 $end
+$var wire 1 @$ Write_Data $end
+$var wire 1 l# Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 A$ Read_Data_2 $end
+$var wire 1 B$ Read_Data_1 $end
+$var reg 1 C$ DFF $end
+$upscope $end
+$scope module cir9thbit $end
+$var wire 1 D$ RAM1bit_data $end
+$var wire 1 i# Read_Select_1 $end
+$var wire 1 j# Read_Select_2 $end
+$var wire 1 E$ Write_Data $end
+$var wire 1 l# Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 F$ Read_Data_2 $end
+$var wire 1 G$ Read_Data_1 $end
+$var reg 1 H$ DFF $end
+$upscope $end
+$upscope $end
+$scope module ram_row3 $end
+$var wire 1 I$ Read_Select_1 $end
+$var wire 1 J$ Read_Select_2 $end
+$var wire 11 K$ Write_Data [10:0] $end
+$var wire 1 L$ Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 11 M$ Read_Data_2 [10:0] $end
+$var wire 11 N$ Read_Data_1 [10:0] $end
+$var wire 11 O$ RAM_row_data [10:0] $end
+$scope module cir0thbit $end
+$var wire 1 P$ RAM1bit_data $end
+$var wire 1 I$ Read_Select_1 $end
+$var wire 1 J$ Read_Select_2 $end
+$var wire 1 Q$ Write_Data $end
+$var wire 1 L$ Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 R$ Read_Data_2 $end
+$var wire 1 S$ Read_Data_1 $end
+$var reg 1 T$ DFF $end
+$upscope $end
+$scope module cir10thbit $end
+$var wire 1 U$ RAM1bit_data $end
+$var wire 1 I$ Read_Select_1 $end
+$var wire 1 J$ Read_Select_2 $end
+$var wire 1 V$ Write_Data $end
+$var wire 1 L$ Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 W$ Read_Data_2 $end
+$var wire 1 X$ Read_Data_1 $end
+$var reg 1 Y$ DFF $end
+$upscope $end
+$scope module cir1stbit $end
+$var wire 1 Z$ RAM1bit_data $end
+$var wire 1 I$ Read_Select_1 $end
+$var wire 1 J$ Read_Select_2 $end
+$var wire 1 [$ Write_Data $end
+$var wire 1 L$ Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 \$ Read_Data_2 $end
+$var wire 1 ]$ Read_Data_1 $end
+$var reg 1 ^$ DFF $end
+$upscope $end
+$scope module cir2ndbit $end
+$var wire 1 _$ RAM1bit_data $end
+$var wire 1 I$ Read_Select_1 $end
+$var wire 1 J$ Read_Select_2 $end
+$var wire 1 `$ Write_Data $end
+$var wire 1 L$ Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 a$ Read_Data_2 $end
+$var wire 1 b$ Read_Data_1 $end
+$var reg 1 c$ DFF $end
+$upscope $end
+$scope module cir3rdbit $end
+$var wire 1 d$ RAM1bit_data $end
+$var wire 1 I$ Read_Select_1 $end
+$var wire 1 J$ Read_Select_2 $end
+$var wire 1 e$ Write_Data $end
+$var wire 1 L$ Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 f$ Read_Data_2 $end
+$var wire 1 g$ Read_Data_1 $end
+$var reg 1 h$ DFF $end
+$upscope $end
+$scope module cir4thbit $end
+$var wire 1 i$ RAM1bit_data $end
+$var wire 1 I$ Read_Select_1 $end
+$var wire 1 J$ Read_Select_2 $end
+$var wire 1 j$ Write_Data $end
+$var wire 1 L$ Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 k$ Read_Data_2 $end
+$var wire 1 l$ Read_Data_1 $end
+$var reg 1 m$ DFF $end
+$upscope $end
+$scope module cir5thbit $end
+$var wire 1 n$ RAM1bit_data $end
+$var wire 1 I$ Read_Select_1 $end
+$var wire 1 J$ Read_Select_2 $end
+$var wire 1 o$ Write_Data $end
+$var wire 1 L$ Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 p$ Read_Data_2 $end
+$var wire 1 q$ Read_Data_1 $end
+$var reg 1 r$ DFF $end
+$upscope $end
+$scope module cir6thbit $end
+$var wire 1 s$ RAM1bit_data $end
+$var wire 1 I$ Read_Select_1 $end
+$var wire 1 J$ Read_Select_2 $end
+$var wire 1 t$ Write_Data $end
+$var wire 1 L$ Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 u$ Read_Data_2 $end
+$var wire 1 v$ Read_Data_1 $end
+$var reg 1 w$ DFF $end
+$upscope $end
+$scope module cir7thbit $end
+$var wire 1 x$ RAM1bit_data $end
+$var wire 1 I$ Read_Select_1 $end
+$var wire 1 J$ Read_Select_2 $end
+$var wire 1 y$ Write_Data $end
+$var wire 1 L$ Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 z$ Read_Data_2 $end
+$var wire 1 {$ Read_Data_1 $end
+$var reg 1 |$ DFF $end
+$upscope $end
+$scope module cir8thbit $end
+$var wire 1 }$ RAM1bit_data $end
+$var wire 1 I$ Read_Select_1 $end
+$var wire 1 J$ Read_Select_2 $end
+$var wire 1 ~$ Write_Data $end
+$var wire 1 L$ Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 !% Read_Data_2 $end
+$var wire 1 "% Read_Data_1 $end
+$var reg 1 #% DFF $end
+$upscope $end
+$scope module cir9thbit $end
+$var wire 1 $% RAM1bit_data $end
+$var wire 1 I$ Read_Select_1 $end
+$var wire 1 J$ Read_Select_2 $end
+$var wire 1 %% Write_Data $end
+$var wire 1 L$ Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 &% Read_Data_2 $end
+$var wire 1 '% Read_Data_1 $end
+$var reg 1 (% DFF $end
+$upscope $end
+$upscope $end
+$scope module ram_row4 $end
+$var wire 1 )% Read_Select_1 $end
+$var wire 1 *% Read_Select_2 $end
+$var wire 11 +% Write_Data [10:0] $end
+$var wire 1 ,% Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 11 -% Read_Data_2 [10:0] $end
+$var wire 11 .% Read_Data_1 [10:0] $end
+$var wire 11 /% RAM_row_data [10:0] $end
+$scope module cir0thbit $end
+$var wire 1 0% RAM1bit_data $end
+$var wire 1 )% Read_Select_1 $end
+$var wire 1 *% Read_Select_2 $end
+$var wire 1 1% Write_Data $end
+$var wire 1 ,% Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 2% Read_Data_2 $end
+$var wire 1 3% Read_Data_1 $end
+$var reg 1 4% DFF $end
+$upscope $end
+$scope module cir10thbit $end
+$var wire 1 5% RAM1bit_data $end
+$var wire 1 )% Read_Select_1 $end
+$var wire 1 *% Read_Select_2 $end
+$var wire 1 6% Write_Data $end
+$var wire 1 ,% Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 7% Read_Data_2 $end
+$var wire 1 8% Read_Data_1 $end
+$var reg 1 9% DFF $end
+$upscope $end
+$scope module cir1stbit $end
+$var wire 1 :% RAM1bit_data $end
+$var wire 1 )% Read_Select_1 $end
+$var wire 1 *% Read_Select_2 $end
+$var wire 1 ;% Write_Data $end
+$var wire 1 ,% Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 <% Read_Data_2 $end
+$var wire 1 =% Read_Data_1 $end
+$var reg 1 >% DFF $end
+$upscope $end
+$scope module cir2ndbit $end
+$var wire 1 ?% RAM1bit_data $end
+$var wire 1 )% Read_Select_1 $end
+$var wire 1 *% Read_Select_2 $end
+$var wire 1 @% Write_Data $end
+$var wire 1 ,% Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 A% Read_Data_2 $end
+$var wire 1 B% Read_Data_1 $end
+$var reg 1 C% DFF $end
+$upscope $end
+$scope module cir3rdbit $end
+$var wire 1 D% RAM1bit_data $end
+$var wire 1 )% Read_Select_1 $end
+$var wire 1 *% Read_Select_2 $end
+$var wire 1 E% Write_Data $end
+$var wire 1 ,% Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 F% Read_Data_2 $end
+$var wire 1 G% Read_Data_1 $end
+$var reg 1 H% DFF $end
+$upscope $end
+$scope module cir4thbit $end
+$var wire 1 I% RAM1bit_data $end
+$var wire 1 )% Read_Select_1 $end
+$var wire 1 *% Read_Select_2 $end
+$var wire 1 J% Write_Data $end
+$var wire 1 ,% Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 K% Read_Data_2 $end
+$var wire 1 L% Read_Data_1 $end
+$var reg 1 M% DFF $end
+$upscope $end
+$scope module cir5thbit $end
+$var wire 1 N% RAM1bit_data $end
+$var wire 1 )% Read_Select_1 $end
+$var wire 1 *% Read_Select_2 $end
+$var wire 1 O% Write_Data $end
+$var wire 1 ,% Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 P% Read_Data_2 $end
+$var wire 1 Q% Read_Data_1 $end
+$var reg 1 R% DFF $end
+$upscope $end
+$scope module cir6thbit $end
+$var wire 1 S% RAM1bit_data $end
+$var wire 1 )% Read_Select_1 $end
+$var wire 1 *% Read_Select_2 $end
+$var wire 1 T% Write_Data $end
+$var wire 1 ,% Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 U% Read_Data_2 $end
+$var wire 1 V% Read_Data_1 $end
+$var reg 1 W% DFF $end
+$upscope $end
+$scope module cir7thbit $end
+$var wire 1 X% RAM1bit_data $end
+$var wire 1 )% Read_Select_1 $end
+$var wire 1 *% Read_Select_2 $end
+$var wire 1 Y% Write_Data $end
+$var wire 1 ,% Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 Z% Read_Data_2 $end
+$var wire 1 [% Read_Data_1 $end
+$var reg 1 \% DFF $end
+$upscope $end
+$scope module cir8thbit $end
+$var wire 1 ]% RAM1bit_data $end
+$var wire 1 )% Read_Select_1 $end
+$var wire 1 *% Read_Select_2 $end
+$var wire 1 ^% Write_Data $end
+$var wire 1 ,% Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 _% Read_Data_2 $end
+$var wire 1 `% Read_Data_1 $end
+$var reg 1 a% DFF $end
+$upscope $end
+$scope module cir9thbit $end
+$var wire 1 b% RAM1bit_data $end
+$var wire 1 )% Read_Select_1 $end
+$var wire 1 *% Read_Select_2 $end
+$var wire 1 c% Write_Data $end
+$var wire 1 ,% Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 d% Read_Data_2 $end
+$var wire 1 e% Read_Data_1 $end
+$var reg 1 f% DFF $end
+$upscope $end
+$upscope $end
+$scope module ram_row5 $end
+$var wire 1 g% Read_Select_1 $end
+$var wire 1 h% Read_Select_2 $end
+$var wire 11 i% Write_Data [10:0] $end
+$var wire 1 j% Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 11 k% Read_Data_2 [10:0] $end
+$var wire 11 l% Read_Data_1 [10:0] $end
+$var wire 11 m% RAM_row_data [10:0] $end
+$scope module cir0thbit $end
+$var wire 1 n% RAM1bit_data $end
+$var wire 1 g% Read_Select_1 $end
+$var wire 1 h% Read_Select_2 $end
+$var wire 1 o% Write_Data $end
+$var wire 1 j% Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 p% Read_Data_2 $end
+$var wire 1 q% Read_Data_1 $end
+$var reg 1 r% DFF $end
+$upscope $end
+$scope module cir10thbit $end
+$var wire 1 s% RAM1bit_data $end
+$var wire 1 g% Read_Select_1 $end
+$var wire 1 h% Read_Select_2 $end
+$var wire 1 t% Write_Data $end
+$var wire 1 j% Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 u% Read_Data_2 $end
+$var wire 1 v% Read_Data_1 $end
+$var reg 1 w% DFF $end
+$upscope $end
+$scope module cir1stbit $end
+$var wire 1 x% RAM1bit_data $end
+$var wire 1 g% Read_Select_1 $end
+$var wire 1 h% Read_Select_2 $end
+$var wire 1 y% Write_Data $end
+$var wire 1 j% Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 z% Read_Data_2 $end
+$var wire 1 {% Read_Data_1 $end
+$var reg 1 |% DFF $end
+$upscope $end
+$scope module cir2ndbit $end
+$var wire 1 }% RAM1bit_data $end
+$var wire 1 g% Read_Select_1 $end
+$var wire 1 h% Read_Select_2 $end
+$var wire 1 ~% Write_Data $end
+$var wire 1 j% Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 !& Read_Data_2 $end
+$var wire 1 "& Read_Data_1 $end
+$var reg 1 #& DFF $end
+$upscope $end
+$scope module cir3rdbit $end
+$var wire 1 $& RAM1bit_data $end
+$var wire 1 g% Read_Select_1 $end
+$var wire 1 h% Read_Select_2 $end
+$var wire 1 %& Write_Data $end
+$var wire 1 j% Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 && Read_Data_2 $end
+$var wire 1 '& Read_Data_1 $end
+$var reg 1 (& DFF $end
+$upscope $end
+$scope module cir4thbit $end
+$var wire 1 )& RAM1bit_data $end
+$var wire 1 g% Read_Select_1 $end
+$var wire 1 h% Read_Select_2 $end
+$var wire 1 *& Write_Data $end
+$var wire 1 j% Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 +& Read_Data_2 $end
+$var wire 1 ,& Read_Data_1 $end
+$var reg 1 -& DFF $end
+$upscope $end
+$scope module cir5thbit $end
+$var wire 1 .& RAM1bit_data $end
+$var wire 1 g% Read_Select_1 $end
+$var wire 1 h% Read_Select_2 $end
+$var wire 1 /& Write_Data $end
+$var wire 1 j% Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 0& Read_Data_2 $end
+$var wire 1 1& Read_Data_1 $end
+$var reg 1 2& DFF $end
+$upscope $end
+$scope module cir6thbit $end
+$var wire 1 3& RAM1bit_data $end
+$var wire 1 g% Read_Select_1 $end
+$var wire 1 h% Read_Select_2 $end
+$var wire 1 4& Write_Data $end
+$var wire 1 j% Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 5& Read_Data_2 $end
+$var wire 1 6& Read_Data_1 $end
+$var reg 1 7& DFF $end
+$upscope $end
+$scope module cir7thbit $end
+$var wire 1 8& RAM1bit_data $end
+$var wire 1 g% Read_Select_1 $end
+$var wire 1 h% Read_Select_2 $end
+$var wire 1 9& Write_Data $end
+$var wire 1 j% Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 :& Read_Data_2 $end
+$var wire 1 ;& Read_Data_1 $end
+$var reg 1 <& DFF $end
+$upscope $end
+$scope module cir8thbit $end
+$var wire 1 =& RAM1bit_data $end
+$var wire 1 g% Read_Select_1 $end
+$var wire 1 h% Read_Select_2 $end
+$var wire 1 >& Write_Data $end
+$var wire 1 j% Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 ?& Read_Data_2 $end
+$var wire 1 @& Read_Data_1 $end
+$var reg 1 A& DFF $end
+$upscope $end
+$scope module cir9thbit $end
+$var wire 1 B& RAM1bit_data $end
+$var wire 1 g% Read_Select_1 $end
+$var wire 1 h% Read_Select_2 $end
+$var wire 1 C& Write_Data $end
+$var wire 1 j% Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 D& Read_Data_2 $end
+$var wire 1 E& Read_Data_1 $end
+$var reg 1 F& DFF $end
+$upscope $end
+$upscope $end
+$scope module ram_row6 $end
+$var wire 1 G& Read_Select_1 $end
+$var wire 1 H& Read_Select_2 $end
+$var wire 11 I& Write_Data [10:0] $end
+$var wire 1 J& Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 11 K& Read_Data_2 [10:0] $end
+$var wire 11 L& Read_Data_1 [10:0] $end
+$var wire 11 M& RAM_row_data [10:0] $end
+$scope module cir0thbit $end
+$var wire 1 N& RAM1bit_data $end
+$var wire 1 G& Read_Select_1 $end
+$var wire 1 H& Read_Select_2 $end
+$var wire 1 O& Write_Data $end
+$var wire 1 J& Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 P& Read_Data_2 $end
+$var wire 1 Q& Read_Data_1 $end
+$var reg 1 R& DFF $end
+$upscope $end
+$scope module cir10thbit $end
+$var wire 1 S& RAM1bit_data $end
+$var wire 1 G& Read_Select_1 $end
+$var wire 1 H& Read_Select_2 $end
+$var wire 1 T& Write_Data $end
+$var wire 1 J& Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 U& Read_Data_2 $end
+$var wire 1 V& Read_Data_1 $end
+$var reg 1 W& DFF $end
+$upscope $end
+$scope module cir1stbit $end
+$var wire 1 X& RAM1bit_data $end
+$var wire 1 G& Read_Select_1 $end
+$var wire 1 H& Read_Select_2 $end
+$var wire 1 Y& Write_Data $end
+$var wire 1 J& Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 Z& Read_Data_2 $end
+$var wire 1 [& Read_Data_1 $end
+$var reg 1 \& DFF $end
+$upscope $end
+$scope module cir2ndbit $end
+$var wire 1 ]& RAM1bit_data $end
+$var wire 1 G& Read_Select_1 $end
+$var wire 1 H& Read_Select_2 $end
+$var wire 1 ^& Write_Data $end
+$var wire 1 J& Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 _& Read_Data_2 $end
+$var wire 1 `& Read_Data_1 $end
+$var reg 1 a& DFF $end
+$upscope $end
+$scope module cir3rdbit $end
+$var wire 1 b& RAM1bit_data $end
+$var wire 1 G& Read_Select_1 $end
+$var wire 1 H& Read_Select_2 $end
+$var wire 1 c& Write_Data $end
+$var wire 1 J& Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 d& Read_Data_2 $end
+$var wire 1 e& Read_Data_1 $end
+$var reg 1 f& DFF $end
+$upscope $end
+$scope module cir4thbit $end
+$var wire 1 g& RAM1bit_data $end
+$var wire 1 G& Read_Select_1 $end
+$var wire 1 H& Read_Select_2 $end
+$var wire 1 h& Write_Data $end
+$var wire 1 J& Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 i& Read_Data_2 $end
+$var wire 1 j& Read_Data_1 $end
+$var reg 1 k& DFF $end
+$upscope $end
+$scope module cir5thbit $end
+$var wire 1 l& RAM1bit_data $end
+$var wire 1 G& Read_Select_1 $end
+$var wire 1 H& Read_Select_2 $end
+$var wire 1 m& Write_Data $end
+$var wire 1 J& Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 n& Read_Data_2 $end
+$var wire 1 o& Read_Data_1 $end
+$var reg 1 p& DFF $end
+$upscope $end
+$scope module cir6thbit $end
+$var wire 1 q& RAM1bit_data $end
+$var wire 1 G& Read_Select_1 $end
+$var wire 1 H& Read_Select_2 $end
+$var wire 1 r& Write_Data $end
+$var wire 1 J& Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 s& Read_Data_2 $end
+$var wire 1 t& Read_Data_1 $end
+$var reg 1 u& DFF $end
+$upscope $end
+$scope module cir7thbit $end
+$var wire 1 v& RAM1bit_data $end
+$var wire 1 G& Read_Select_1 $end
+$var wire 1 H& Read_Select_2 $end
+$var wire 1 w& Write_Data $end
+$var wire 1 J& Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 x& Read_Data_2 $end
+$var wire 1 y& Read_Data_1 $end
+$var reg 1 z& DFF $end
+$upscope $end
+$scope module cir8thbit $end
+$var wire 1 {& RAM1bit_data $end
+$var wire 1 G& Read_Select_1 $end
+$var wire 1 H& Read_Select_2 $end
+$var wire 1 |& Write_Data $end
+$var wire 1 J& Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 }& Read_Data_2 $end
+$var wire 1 ~& Read_Data_1 $end
+$var reg 1 !' DFF $end
+$upscope $end
+$scope module cir9thbit $end
+$var wire 1 "' RAM1bit_data $end
+$var wire 1 G& Read_Select_1 $end
+$var wire 1 H& Read_Select_2 $end
+$var wire 1 #' Write_Data $end
+$var wire 1 J& Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 $' Read_Data_2 $end
+$var wire 1 %' Read_Data_1 $end
+$var reg 1 &' DFF $end
+$upscope $end
+$upscope $end
+$scope module ram_row7 $end
+$var wire 1 '' Read_Select_1 $end
+$var wire 1 (' Read_Select_2 $end
+$var wire 11 )' Write_Data [10:0] $end
+$var wire 1 *' Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 11 +' Read_Data_2 [10:0] $end
+$var wire 11 ,' Read_Data_1 [10:0] $end
+$var wire 11 -' RAM_row_data [10:0] $end
+$scope module cir0thbit $end
+$var wire 1 .' RAM1bit_data $end
+$var wire 1 '' Read_Select_1 $end
+$var wire 1 (' Read_Select_2 $end
+$var wire 1 /' Write_Data $end
+$var wire 1 *' Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 0' Read_Data_2 $end
+$var wire 1 1' Read_Data_1 $end
+$var reg 1 2' DFF $end
+$upscope $end
+$scope module cir10thbit $end
+$var wire 1 3' RAM1bit_data $end
+$var wire 1 '' Read_Select_1 $end
+$var wire 1 (' Read_Select_2 $end
+$var wire 1 4' Write_Data $end
+$var wire 1 *' Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 5' Read_Data_2 $end
+$var wire 1 6' Read_Data_1 $end
+$var reg 1 7' DFF $end
+$upscope $end
+$scope module cir1stbit $end
+$var wire 1 8' RAM1bit_data $end
+$var wire 1 '' Read_Select_1 $end
+$var wire 1 (' Read_Select_2 $end
+$var wire 1 9' Write_Data $end
+$var wire 1 *' Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 :' Read_Data_2 $end
+$var wire 1 ;' Read_Data_1 $end
+$var reg 1 <' DFF $end
+$upscope $end
+$scope module cir2ndbit $end
+$var wire 1 =' RAM1bit_data $end
+$var wire 1 '' Read_Select_1 $end
+$var wire 1 (' Read_Select_2 $end
+$var wire 1 >' Write_Data $end
+$var wire 1 *' Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 ?' Read_Data_2 $end
+$var wire 1 @' Read_Data_1 $end
+$var reg 1 A' DFF $end
+$upscope $end
+$scope module cir3rdbit $end
+$var wire 1 B' RAM1bit_data $end
+$var wire 1 '' Read_Select_1 $end
+$var wire 1 (' Read_Select_2 $end
+$var wire 1 C' Write_Data $end
+$var wire 1 *' Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 D' Read_Data_2 $end
+$var wire 1 E' Read_Data_1 $end
+$var reg 1 F' DFF $end
+$upscope $end
+$scope module cir4thbit $end
+$var wire 1 G' RAM1bit_data $end
+$var wire 1 '' Read_Select_1 $end
+$var wire 1 (' Read_Select_2 $end
+$var wire 1 H' Write_Data $end
+$var wire 1 *' Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 I' Read_Data_2 $end
+$var wire 1 J' Read_Data_1 $end
+$var reg 1 K' DFF $end
+$upscope $end
+$scope module cir5thbit $end
+$var wire 1 L' RAM1bit_data $end
+$var wire 1 '' Read_Select_1 $end
+$var wire 1 (' Read_Select_2 $end
+$var wire 1 M' Write_Data $end
+$var wire 1 *' Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 N' Read_Data_2 $end
+$var wire 1 O' Read_Data_1 $end
+$var reg 1 P' DFF $end
+$upscope $end
+$scope module cir6thbit $end
+$var wire 1 Q' RAM1bit_data $end
+$var wire 1 '' Read_Select_1 $end
+$var wire 1 (' Read_Select_2 $end
+$var wire 1 R' Write_Data $end
+$var wire 1 *' Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 S' Read_Data_2 $end
+$var wire 1 T' Read_Data_1 $end
+$var reg 1 U' DFF $end
+$upscope $end
+$scope module cir7thbit $end
+$var wire 1 V' RAM1bit_data $end
+$var wire 1 '' Read_Select_1 $end
+$var wire 1 (' Read_Select_2 $end
+$var wire 1 W' Write_Data $end
+$var wire 1 *' Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 X' Read_Data_2 $end
+$var wire 1 Y' Read_Data_1 $end
+$var reg 1 Z' DFF $end
+$upscope $end
+$scope module cir8thbit $end
+$var wire 1 [' RAM1bit_data $end
+$var wire 1 '' Read_Select_1 $end
+$var wire 1 (' Read_Select_2 $end
+$var wire 1 \' Write_Data $end
+$var wire 1 *' Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 ]' Read_Data_2 $end
+$var wire 1 ^' Read_Data_1 $end
+$var reg 1 _' DFF $end
+$upscope $end
+$scope module cir9thbit $end
+$var wire 1 `' RAM1bit_data $end
+$var wire 1 '' Read_Select_1 $end
+$var wire 1 (' Read_Select_2 $end
+$var wire 1 a' Write_Data $end
+$var wire 1 *' Write_Select $end
+$var wire 1 6 clk $end
+$var wire 1 7 reset $end
+$var wire 1 b' Read_Data_2 $end
+$var wire 1 c' Read_Data_1 $end
+$var reg 1 d' DFF $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module RF_circuit1 $end
+$var wire 5 e' InD [4:0] $end
+$var wire 1 1 InE $end
+$var wire 5 f' OutD [4:0] $end
+$var wire 5 g' R0 [4:0] $end
+$var wire 5 h' R1 [4:0] $end
+$var wire 5 i' R2 [4:0] $end
+$var wire 5 j' R3 [4:0] $end
+$var wire 2 k' RA [1:0] $end
+$var wire 2 l' RB [1:0] $end
+$var wire 1 H RE $end
+$var wire 2 m' WR [1:0] $end
+$var wire 5 n' WRD [4:0] $end
+$var wire 1 8 clk $end
+$var wire 1 7 reset $end
+$var wire 5 o' R11 [4:0] $end
+$var wire 5 p' R10 [4:0] $end
+$var wire 5 q' R01 [4:0] $end
+$var wire 5 r' R00 [4:0] $end
+$var reg 5 s' A [4:0] $end
+$var reg 5 t' B [4:0] $end
+$var reg 4 u' WR_SEL [3:0] $end
+$scope module Reg00 $end
+$var wire 5 v' Din [4:0] $end
+$var wire 1 w' Sel $end
+$var wire 1 8 clk $end
+$var wire 1 7 reset $end
+$var wire 5 x' Dout [4:0] $end
+$scope module cir1stbit $end
+$var wire 1 y' Din $end
+$var wire 1 z' Dout $end
+$var wire 1 w' Sel $end
+$var wire 1 8 clk $end
+$var wire 1 7 reset $end
+$var reg 1 z' DFF $end
+$upscope $end
+$scope module cir2ndbit $end
+$var wire 1 {' Din $end
+$var wire 1 |' Dout $end
+$var wire 1 w' Sel $end
+$var wire 1 8 clk $end
+$var wire 1 7 reset $end
+$var reg 1 |' DFF $end
+$upscope $end
+$scope module cir3rdbit $end
+$var wire 1 }' Din $end
+$var wire 1 ~' Dout $end
+$var wire 1 w' Sel $end
+$var wire 1 8 clk $end
+$var wire 1 7 reset $end
+$var reg 1 ~' DFF $end
+$upscope $end
+$scope module cir4thbit $end
+$var wire 1 !( Din $end
+$var wire 1 "( Dout $end
+$var wire 1 w' Sel $end
+$var wire 1 8 clk $end
+$var wire 1 7 reset $end
+$var reg 1 "( DFF $end
+$upscope $end
+$scope module cir5thbit $end
+$var wire 1 #( Din $end
+$var wire 1 $( Dout $end
+$var wire 1 w' Sel $end
+$var wire 1 8 clk $end
+$var wire 1 7 reset $end
+$var reg 1 $( DFF $end
+$upscope $end
+$upscope $end
+$scope module Reg01 $end
+$var wire 5 %( Din [4:0] $end
+$var wire 1 &( Sel $end
+$var wire 1 8 clk $end
+$var wire 1 7 reset $end
+$var wire 5 '( Dout [4:0] $end
+$scope module cir1stbit $end
+$var wire 1 (( Din $end
+$var wire 1 )( Dout $end
+$var wire 1 &( Sel $end
+$var wire 1 8 clk $end
+$var wire 1 7 reset $end
+$var reg 1 )( DFF $end
+$upscope $end
+$scope module cir2ndbit $end
+$var wire 1 *( Din $end
+$var wire 1 +( Dout $end
+$var wire 1 &( Sel $end
+$var wire 1 8 clk $end
+$var wire 1 7 reset $end
+$var reg 1 +( DFF $end
+$upscope $end
+$scope module cir3rdbit $end
+$var wire 1 ,( Din $end
+$var wire 1 -( Dout $end
+$var wire 1 &( Sel $end
+$var wire 1 8 clk $end
+$var wire 1 7 reset $end
+$var reg 1 -( DFF $end
+$upscope $end
+$scope module cir4thbit $end
+$var wire 1 .( Din $end
+$var wire 1 /( Dout $end
+$var wire 1 &( Sel $end
+$var wire 1 8 clk $end
+$var wire 1 7 reset $end
+$var reg 1 /( DFF $end
+$upscope $end
+$scope module cir5thbit $end
+$var wire 1 0( Din $end
+$var wire 1 1( Dout $end
+$var wire 1 &( Sel $end
+$var wire 1 8 clk $end
+$var wire 1 7 reset $end
+$var reg 1 1( DFF $end
+$upscope $end
+$upscope $end
+$scope module Reg10 $end
+$var wire 5 2( Din [4:0] $end
+$var wire 1 1 Sel $end
+$var wire 1 8 clk $end
+$var wire 1 7 reset $end
+$var wire 5 3( Dout [4:0] $end
+$scope module cir1stbit $end
+$var wire 1 4( Din $end
+$var wire 1 5( Dout $end
+$var wire 1 1 Sel $end
+$var wire 1 8 clk $end
+$var wire 1 7 reset $end
+$var reg 1 5( DFF $end
+$upscope $end
+$scope module cir2ndbit $end
+$var wire 1 6( Din $end
+$var wire 1 7( Dout $end
+$var wire 1 1 Sel $end
+$var wire 1 8 clk $end
+$var wire 1 7 reset $end
+$var reg 1 7( DFF $end
+$upscope $end
+$scope module cir3rdbit $end
+$var wire 1 8( Din $end
+$var wire 1 9( Dout $end
+$var wire 1 1 Sel $end
+$var wire 1 8 clk $end
+$var wire 1 7 reset $end
+$var reg 1 9( DFF $end
+$upscope $end
+$scope module cir4thbit $end
+$var wire 1 :( Din $end
+$var wire 1 ;( Dout $end
+$var wire 1 1 Sel $end
+$var wire 1 8 clk $end
+$var wire 1 7 reset $end
+$var reg 1 ;( DFF $end
+$upscope $end
+$scope module cir5thbit $end
+$var wire 1 <( Din $end
+$var wire 1 =( Dout $end
+$var wire 1 1 Sel $end
+$var wire 1 8 clk $end
+$var wire 1 7 reset $end
+$var reg 1 =( DFF $end
+$upscope $end
+$upscope $end
+$scope module Reg11 $end
+$var wire 5 >( Din [4:0] $end
+$var wire 1 ?( Sel $end
+$var wire 1 8 clk $end
+$var wire 1 7 reset $end
+$var wire 5 @( Dout [4:0] $end
+$scope module cir1stbit $end
+$var wire 1 A( Din $end
+$var wire 1 B( Dout $end
+$var wire 1 ?( Sel $end
+$var wire 1 8 clk $end
+$var wire 1 7 reset $end
+$var reg 1 B( DFF $end
+$upscope $end
+$scope module cir2ndbit $end
+$var wire 1 C( Din $end
+$var wire 1 D( Dout $end
+$var wire 1 ?( Sel $end
+$var wire 1 8 clk $end
+$var wire 1 7 reset $end
+$var reg 1 D( DFF $end
+$upscope $end
+$scope module cir3rdbit $end
+$var wire 1 E( Din $end
+$var wire 1 F( Dout $end
+$var wire 1 ?( Sel $end
+$var wire 1 8 clk $end
+$var wire 1 7 reset $end
+$var reg 1 F( DFF $end
+$upscope $end
+$scope module cir4thbit $end
+$var wire 1 G( Din $end
+$var wire 1 H( Dout $end
+$var wire 1 ?( Sel $end
+$var wire 1 8 clk $end
+$var wire 1 7 reset $end
+$var reg 1 H( DFF $end
+$upscope $end
+$scope module cir5thbit $end
+$var wire 1 I( Din $end
+$var wire 1 J( Dout $end
+$var wire 1 ?( Sel $end
+$var wire 1 8 clk $end
+$var wire 1 7 reset $end
+$var reg 1 J( DFF $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0J(
+0I(
+0H(
+0G(
+0F(
+0E(
+0D(
+0C(
+0B(
+0A(
+b0 @(
+0?(
+b0 >(
+0=(
+0<(
+0;(
+0:(
+09(
+08(
+07(
+06(
+05(
+04(
+b0 3(
+b0 2(
+01(
+00(
+0/(
+0.(
+0-(
+0,(
+0+(
+0*(
+0)(
+0((
+b0 '(
+0&(
+b0 %(
+0$(
+0#(
+0"(
+0!(
+0~'
+0}'
+0|'
+0{'
+0z'
+0y'
+b0 x'
+1w'
+b0 v'
+b1 u'
+b0 t'
+b0 s'
+b0 r'
+b0 q'
+b0 p'
+b0 o'
+b0 n'
+b0 m'
+b0 l'
+b0 k'
+b0 j'
+b0 i'
+b0 h'
+b0 g'
+b0 f'
+b0 e'
+0d'
+0c'
+0b'
+0a'
+0`'
+0_'
+0^'
+0]'
+0\'
+0['
+0Z'
+0Y'
+0X'
+0W'
+0V'
+0U'
+0T'
+0S'
+0R'
+0Q'
+0P'
+0O'
+0N'
+0M'
+0L'
+0K'
+0J'
+0I'
+0H'
+0G'
+0F'
+0E'
+0D'
+0C'
+0B'
+0A'
+0@'
+0?'
+0>'
+0='
+0<'
+0;'
+0:'
+09'
+08'
+07'
+06'
+05'
+04'
+03'
+02'
+01'
+00'
+0/'
+0.'
+b0 -'
+b0 ,'
+b0 +'
+0*'
+b0 )'
+0('
+1''
+0&'
+0%'
+0$'
+0#'
+0"'
+0!'
+0~&
+0}&
+0|&
+0{&
+0z&
+0y&
+0x&
+0w&
+0v&
+0u&
+0t&
+0s&
+0r&
+0q&
+0p&
+0o&
+0n&
+0m&
+0l&
+0k&
+0j&
+0i&
+0h&
+0g&
+0f&
+0e&
+0d&
+0c&
+0b&
+0a&
+0`&
+0_&
+0^&
+0]&
+0\&
+0[&
+0Z&
+0Y&
+0X&
+0W&
+0V&
+0U&
+0T&
+0S&
+0R&
+0Q&
+0P&
+0O&
+0N&
+b0 M&
+b0 L&
+b0 K&
+0J&
+b0 I&
+0H&
+0G&
+0F&
+0E&
+0D&
+0C&
+0B&
+0A&
+0@&
+0?&
+0>&
+0=&
+0<&
+0;&
+0:&
+09&
+08&
+07&
+06&
+05&
+04&
+03&
+02&
+01&
+00&
+0/&
+0.&
+0-&
+0,&
+0+&
+0*&
+0)&
+0(&
+0'&
+0&&
+0%&
+0$&
+0#&
+0"&
+0!&
+0~%
+0}%
+0|%
+0{%
+0z%
+0y%
+0x%
+0w%
+0v%
+0u%
+0t%
+0s%
+0r%
+0q%
+0p%
+0o%
+0n%
+b0 m%
+b0 l%
+b0 k%
+0j%
+b0 i%
+0h%
+0g%
+0f%
+0e%
+0d%
+0c%
+0b%
+0a%
+0`%
+0_%
+0^%
+0]%
+0\%
+0[%
+0Z%
+0Y%
+0X%
+0W%
+0V%
+0U%
+0T%
+0S%
+0R%
+0Q%
+0P%
+0O%
+0N%
+0M%
+0L%
+0K%
+0J%
+0I%
+0H%
+0G%
+0F%
+0E%
+0D%
+0C%
+0B%
+0A%
+0@%
+0?%
+0>%
+0=%
+0<%
+0;%
+0:%
+09%
+08%
+07%
+06%
+05%
+04%
+03%
+02%
+01%
+00%
+b0 /%
+b0 .%
+b0 -%
+0,%
+b0 +%
+0*%
+0)%
+0(%
+0'%
+0&%
+0%%
+0$%
+0#%
+0"%
+0!%
+0~$
+0}$
+0|$
+0{$
+0z$
+0y$
+0x$
+0w$
+0v$
+0u$
+0t$
+0s$
+0r$
+0q$
+0p$
+0o$
+0n$
+0m$
+0l$
+0k$
+0j$
+0i$
+0h$
+0g$
+0f$
+0e$
+0d$
+0c$
+0b$
+0a$
+0`$
+0_$
+0^$
+0]$
+0\$
+0[$
+0Z$
+0Y$
+0X$
+0W$
+0V$
+0U$
+0T$
+0S$
+0R$
+0Q$
+0P$
+b0 O$
+b0 N$
+b0 M$
+0L$
+b0 K$
+0J$
+0I$
+0H$
+0G$
+0F$
+0E$
+0D$
+0C$
+0B$
+0A$
+0@$
+0?$
+0>$
+0=$
+0<$
+0;$
+0:$
+09$
+08$
+07$
+06$
+05$
+04$
+03$
+02$
+01$
+00$
+0/$
+0.$
+0-$
+0,$
+0+$
+0*$
+0)$
+0($
+0'$
+0&$
+0%$
+0$$
+0#$
+0"$
+0!$
+0~#
+0}#
+0|#
+0{#
+0z#
+0y#
+0x#
+0w#
+0v#
+0u#
+0t#
+0s#
+0r#
+0q#
+0p#
+b0 o#
+b0 n#
+b0 m#
+0l#
+b0 k#
+0j#
+0i#
+0h#
+0g#
+0f#
+0e#
+0d#
+0c#
+0b#
+0a#
+0`#
+0_#
+0^#
+0]#
+0\#
+0[#
+0Z#
+0Y#
+0X#
+0W#
+0V#
+0U#
+0T#
+0S#
+0R#
+0Q#
+0P#
+0O#
+0N#
+0M#
+0L#
+0K#
+0J#
+0I#
+0H#
+0G#
+0F#
+0E#
+0D#
+0C#
+0B#
+0A#
+0@#
+0?#
+0>#
+0=#
+0<#
+0;#
+0:#
+09#
+08#
+07#
+06#
+05#
+04#
+03#
+02#
+b0 1#
+b0 0#
+b0 /#
+0.#
+b0 -#
+0,#
+0+#
+0*#
+0)#
+0(#
+0'#
+0&#
+0%#
+0$#
+0##
+0"#
+0!#
+0~"
+0}"
+0|"
+0{"
+0z"
+0y"
+0x"
+0w"
+0v"
+0u"
+0t"
+0s"
+0r"
+0q"
+0p"
+0o"
+0n"
+0m"
+0l"
+0k"
+0j"
+0i"
+0h"
+0g"
+0f"
+0e"
+0d"
+0c"
+0b"
+0a"
+0`"
+0_"
+0^"
+0]"
+0\"
+0["
+0Z"
+0Y"
+0X"
+0W"
+0V"
+0U"
+0T"
+0S"
+0R"
+b0 Q"
+b0 P"
+b0 O"
+0N"
+b0 M"
+1L"
+0K"
+b0 J"
+b1 I"
+b10000000 H"
+b0 G"
+b0 F"
+b0 E"
+b0 D"
+b0 C"
+b0 B"
+b0 A"
+b0 @"
+b0 ?"
+b0 >"
+b0 ="
+b0 <"
+b0 ;"
+b0 :"
+b0 9"
+b0 8"
+b0 7"
+b0 6"
+b0 5"
+b0 4"
+b0 3"
+b0 2"
+b0 1"
+b0 0"
+b0 /"
+b0 ."
+b0 -"
+b0 ,"
+b0 +"
+b111 *"
+b0 )"
+b0 ("
+b0 '"
+b0 &"
+b0 %"
+b0 $"
+b0 #"
+b0 ""
+b111 !"
+b111 ~
+b0 }
+0|
+b0 {
+b0 z
+b0 y
+b0 x
+b0 w
+b0 v
+b0 u
+b0 t
+b0 s
+b0 r
+b0 q
+xp
+b0 o
+b0 n
+0m
+b0 l
+b0 k
+b0 j
+b0 i
+b0 h
+b0 g
+b0 f
+0e
+b0 d
+0c
+b0 b
+0a
+b0 `
+b0 _
+1^
+b0 ]
+b0 \
+b0 [
+b0 Z
+b111 Y
+b0 X
+b0 W
+b0 V
+b0 U
+b0 T
+b0 S
+b0 R
+b0 Q
+b0 P
+b0 O
+b0 N
+b0 M
+b0 L
+b0 K
+b0 J
+b0 I
+1H
+0G
+b0 F
+1E
+0D
+0C
+0B
+0A
+b0 @
+b0 ?
+b0 >
+b0 =
+b0 <
+b0 ;
+b111 :
+b0 9
+08
+17
+06
+05
+b0 4
+b0 3
+02
+11
+b0 0
+b0 /
+b111 .
+b0 -
+b0 ,
+b0 +
+b0 *
+b0 )
+b0 (
+b0 '
+b0 &
+b0 %
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#5
+16
+#10
+06
+07
+#15
+16
+#20
+1*'
+1b"
+1B#
+1"$
+1`$
+1@%
+1~%
+1^&
+1>'
+b10000000 J"
+06
+b100 @
+b100 /"
+b100 M"
+b100 -#
+b100 k#
+b100 K$
+b100 +%
+b100 i%
+b100 I&
+b100 )'
+b100 4
+b100 >
+b111 ?
+b111 ."
+b111 3
+b111 =
+1A
+15
+#25
+0L"
+1*%
+b10000 I"
+b100 b
+b100 +"
+b100 d
+b100 -
+b100 ;
+b100 X
+b100 ,"
+b100 8"
+b100 ,'
+1@'
+b100 %
+b100 N
+b100 )"
+b100 @"
+b100 -'
+1='
+1A'
+16
+#30
+1N"
+0*'
+1S"
+1]"
+1"#
+1X"
+13#
+1=#
+1`#
+18#
+1q#
+1{#
+1@$
+1v#
+1Q$
+1[$
+1~$
+1V$
+11%
+1;%
+1^%
+16%
+1o%
+1y%
+1>&
+1t%
+1O&
+1Y&
+1|&
+1T&
+1/'
+19'
+1\'
+14'
+b1 J"
+06
+b10100000111 @
+b10100000111 /"
+b10100000111 M"
+b10100000111 -#
+b10100000111 k#
+b10100000111 K$
+b10100000111 +%
+b10100000111 i%
+b10100000111 I&
+b10100000111 )'
+b10100000111 4
+b10100000111 >
+b0 ?
+b0 ."
+b0 3
+b0 =
+#35
+1R"
+1V"
+1\"
+1`"
+1a"
+1e"
+1!#
+1%#
+b10100000111 ,
+b10100000111 U
+b10100000111 ""
+b10100000111 G"
+b10100000111 Q"
+1W"
+1["
+16
+#40
+06
+12
+#45
+xE
+xy'
+x{'
+x}'
+x((
+x*(
+x,(
+xA(
+xC(
+xE(
+b0xxx <
+b0xxx n'
+b0xxx v'
+b0xxx %(
+b0xxx >(
+b111 o
+b100 _
+b111 k
+b111 r
+b11001 t
+b11 w
+b100 W
+b100 -"
+b100 0"
+b100 +'
+1?'
+b111 s
+b111 f
+b111 i
+b111 q
+b111 v
+1('
+0p
+1c
+b10 \
+b10 l
+b10 {
+0^
+b1010 [
+b1010 z
+0T"
+0Y"
+0^"
+0c"
+b0 7"
+b0 O"
+0##
+0L"
+0*%
+b10000000 I"
+b111 b
+b111 +"
+b111 d
+b10100000111 -
+b10100000111 ;
+b10100000111 X
+b10100000111 ,"
+1U"
+1Z"
+1_"
+1d"
+b10100000111 ?"
+b10100000111 P"
+1$#
+b0 8"
+b0 ,'
+0@'
+1K"
+0''
+b1 H"
+b1 ]
+b1 }
+1B
+b0 .
+b0 :
+b0 Y
+b0 ~
+b0 !"
+b0 *"
+18
+16
+#50
+08
+06
+#55
+b111 _
+b10100000111 W
+b10100000111 -"
+1T"
+1Y"
+1^"
+1c"
+b10100000111 7"
+b10100000111 O"
+1##
+b0 0"
+b0 +'
+0?'
+b0xxx j
+b0xxx y
+xe
+xy'
+x{'
+x((
+x*(
+xA(
+xC(
+1L"
+0('
+bx t
+b0xxx s
+bx w
+0c
+b1 I"
+b0xxx f
+b0xxx i
+b0xxx q
+b0xxx v
+b0 \
+b0 l
+b0 {
+1^
+b0 b
+b0 +"
+b0 d
+b0 [
+b0 z
+b0 -
+b0 ;
+b0 X
+b0 ,"
+0G
+0!(
+0#(
+0.(
+00(
+0G(
+0I(
+0U"
+0Z"
+0_"
+0d"
+b0 ?"
+b0 P"
+0$#
+b0xxx <
+b0xxx n'
+b0xxx v'
+b0xxx %(
+b0xxx >(
+b0xxx o
+0K"
+1+#
+bx k
+bx r
+xm
+bx `
+b10 H"
+b10 ]
+b10 }
+b0xxx h
+b0xxx n
+b0xxx u
+b0xxx x
+b0xxx s'
+b0xxx g
+b0xxx t'
+b1 .
+b1 :
+b1 Y
+b1 ~
+b1 !"
+b1 *"
+xB
+xz'
+x|'
+b0xxx $
+b0xxx L
+b0xxx g'
+b0xxx r'
+b0xxx x'
+x~'
+18
+16
+#60
+08
+06
+#65
+0+#
+1i#
+b100 H"
+b11 ]
+b11 }
+xD
+x|
+b10 .
+b10 :
+b10 Y
+b10 ~
+b10 !"
+b10 *"
+18
+16
+#70
+08
+06
+#75
+0i#
+1I$
+b1000 H"
+b100 ]
+b100 }
+b11 .
+b11 :
+b11 Y
+b11 ~
+b11 !"
+b11 *"
+18
+16
+#80
+08
+06
+#85
+0I$
+1)%
+b10000 H"
+b101 ]
+b101 }
+b100 .
+b100 :
+b100 Y
+b100 ~
+b100 !"
+b100 *"
+18
+16
+#90
+08
+06
+#95
+0)%
+1g%
+b100000 H"
+b110 ]
+b110 }
+b101 .
+b101 :
+b101 Y
+b101 ~
+b101 !"
+b101 *"
+18
+16
+#100
+08
+06
+#105
+0g%
+1G&
+b1000000 H"
+b111 ]
+b111 }
+b110 .
+b110 :
+b110 Y
+b110 ~
+b110 !"
+b110 *"
+18
+16
+#110
+08
+06
+#115
+b0 _
+b0 W
+b0 -"
+0T"
+0Y"
+0^"
+0c"
+b0 7"
+b0 O"
+0##
+0L"
+1*%
+b10000 I"
+b100 b
+b100 +"
+b100 d
+b100 -
+b100 ;
+b100 X
+b100 ,"
+b100 8"
+b100 ,'
+1@'
+0G&
+1''
+b10000000 H"
+b0 ]
+b0 }
+b111 .
+b111 :
+b111 Y
+b111 ~
+b111 !"
+b111 *"
+18
+16
+#120
+08
+06

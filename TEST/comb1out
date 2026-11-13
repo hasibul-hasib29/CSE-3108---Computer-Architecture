@@ -1,0 +1,51 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000025d76d6a070 .scope module, "comb1_tb" "comb1_tb" 2 2;
+ .timescale -9 -9;
+v0000025d76dc35c0_0 .var "a", 3 0;
+v0000025d76dc3660_0 .var "b", 3 0;
+v0000025d76dc3700_0 .var "c", 3 0;
+v0000025d76df2850_0 .net "d", 3 0, L_0000025d76df2990;  1 drivers
+S_0000025d76d6a200 .scope module, "uut" "comb1" 2 7, 3 1 0, S_0000025d76d6a070;
+ .timescale 0 0;
+    .port_info 0 /INPUT 4 "a";
+    .port_info 1 /INPUT 4 "b";
+    .port_info 2 /INPUT 4 "c";
+    .port_info 3 /OUTPUT 4 "reduction";
+v0000025d76dc3af0_0 .net *"_ivl_2", 2 0, L_0000025d76df28f0;  1 drivers
+L_0000025d76e38018 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0000025d76d6bf40_0 .net *"_ivl_4", 0 0, L_0000025d76e38018;  1 drivers
+v0000025d76dc3340_0 .net "a", 3 0, v0000025d76dc35c0_0;  1 drivers
+v0000025d76dc33e0_0 .net "b", 3 0, v0000025d76dc3660_0;  1 drivers
+v0000025d76dc3480_0 .net "c", 3 0, v0000025d76dc3700_0;  1 drivers
+v0000025d76dc3520_0 .net "reduction", 3 0, L_0000025d76df2990;  alias, 1 drivers
+L_0000025d76df28f0 .part v0000025d76dc3700_0, 1, 3;
+L_0000025d76df2990 .concat [ 3 1 0 0], L_0000025d76df28f0, L_0000025d76e38018;
+    .scope S_0000025d76d6a070;
+T_0 ;
+    %pushi/vec4 10, 0, 4;
+    %store/vec4 v0000025d76dc3700_0, 0, 4;
+    %delay 20, 0;
+    %pushi/vec4 15, 0, 4;
+    %store/vec4 v0000025d76dc3700_0, 0, 4;
+    %delay 20, 0;
+    %end;
+    .thread T_0;
+    .scope S_0000025d76d6a070;
+T_1 ;
+    %vpi_call 2 17 "$monitor", "c %4b, %d || d = %4b -- %d", v0000025d76dc3700_0, v0000025d76dc3700_0, v0000025d76df2850_0, v0000025d76df2850_0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "comb1_tb.v";
+    "comb1.v";
